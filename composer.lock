@@ -9,30 +9,30 @@
     "packages": [
         {
             "name": "acquia/blt",
-            "version": "8.4.9",
+            "version": "8.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/blt.git",
-                "reference": "417818d5f3375e317aaefa785bf7a6118d8a317e"
+                "reference": "f623cf3aa2fb107cdf491e94547f9eaa403e38ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/blt/zipball/417818d5f3375e317aaefa785bf7a6118d8a317e",
-                "reference": "417818d5f3375e317aaefa785bf7a6118d8a317e",
+                "url": "https://api.github.com/repos/acquia/blt/zipball/f623cf3aa2fb107cdf491e94547f9eaa403e38ab",
+                "reference": "f623cf3aa2fb107cdf491e94547f9eaa403e38ab",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.0.0",
                 "dflydev/dot-access-data": "^1.0",
-                "drupal/coder": "~8.2",
+                "drupal/coder": "^8.2.8",
                 "drupal/console": "1.0.0-beta5",
-                "phing/phing": "~2",
+                "phing/phing": "^2.15.0",
                 "php": ">=5.6",
-                "phpunit/phpunit": "~5.4",
-                "squizlabs/php_codesniffer": "^2.4",
-                "symfony/console": "~2",
-                "symfony/twig-bridge": "~2",
-                "symfony/yaml": "~2.7"
+                "phpunit/phpunit": "^5.5.4",
+                "squizlabs/php_codesniffer": "^2.7",
+                "symfony/console": "^2.8.11",
+                "symfony/twig-bridge": "^2.8.11",
+                "symfony/yaml": "^2.8.11"
             },
             "conflict": {
                 "drupal/core": "7.*"
@@ -71,7 +71,7 @@
                 "template",
                 "testing"
             ],
-            "time": "2016-10-07 00:03:31"
+            "time": "2016-10-19 15:32:41"
         },
         {
             "name": "alchemy/zippy",
@@ -2688,7 +2688,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/security_review",
-                "reference": "6c18c36beebffaa4e7da21fef72685136a79d58d"
+                "reference": "35ebae445bb260e961e47c4c58efe7c50c228999"
             },
             "require": {
                 "drupal/core": "8.*"
@@ -2705,7 +2705,7 @@
             ],
             "description": "Site security and configuration review module.",
             "homepage": "https://www.drupal.org/project/security_review",
-            "time": "2016-01-26 14:13:03"
+            "time": "2016-10-20 15:43:48"
         },
         {
             "name": "drupal/token",
@@ -7944,6 +7944,10 @@
             "extra": {
                 "branch-alias": {
                     "dev-master": "9.0.x-dev"
+                },
+                "patches_applied": {
+                    "Adding composer.json support to make-convert command": "https://github.com/drush-ops/drush/commit/ce82b946d49b09cd33da5ca84feb24a6c35f8f8e.patch",
+                    "The batch table may not exist by the time _drush_backend_batch_process() is called in 8.x-1.x": "https://github.com/drush-ops/drush/commit/c389aebb7d3e26ff0f544684d8b3ec3528107e55.diff"
                 }
             },
             "autoload": {
@@ -8117,12 +8121,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jakoch/phantomjs-installer.git",
-                "reference": "aeaf5cc45d99353f9b760edc727b37e3e8615596"
+                "reference": "897cb5377e5bc18789b56d90e6e18a2575e5e194"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jakoch/phantomjs-installer/zipball/aeaf5cc45d99353f9b760edc727b37e3e8615596",
-                "reference": "aeaf5cc45d99353f9b760edc727b37e3e8615596",
+                "url": "https://api.github.com/repos/jakoch/phantomjs-installer/zipball/897cb5377e5bc18789b56d90e6e18a2575e5e194",
+                "reference": "897cb5377e5bc18789b56d90e6e18a2575e5e194",
                 "shasum": ""
             },
             "require": {
@@ -8159,7 +8163,7 @@
                 "headless",
                 "phantomjs"
             ],
-            "time": "2016-10-12 02:01:43"
+            "time": "2016-10-21 14:08:14"
         },
         {
             "name": "jakub-onderka/php-console-color",
